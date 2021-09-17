@@ -86,7 +86,7 @@ export default function Home() {
               <p className="text-xl text-white text-center my-6  montserrat"> To provide a novel concept to the MoonRiver community.
               </p>
 			  <h2 className="text-7xl text-center Poppitandfinchsans text-blau my-4">HOW DO I SEE MY WISDOM?</h2>
-              <p className="text-xl text-white text-center my-6  montserrat"> Please <a href="https://blockscout.moonriver.moonbeam.network/address/0x9f12d73B7712A9772F3Fbc3e041556628cBa3a9F/read-contract">Click Here</a> to be taken to the contract "Read" page. Scroll down to "viewToken" and input the token number of the token you received!
+              <p className="text-xl text-white text-center my-6  montserrat"> Please <a href="https://blockscout.moonriver.moonbeam.network/address/0x5A55AF6482BD21fFf6cDb86dc40117932499d3c0/read-contract">Click Here</a> to be taken to the contract "Read" page. Scroll down to "viewToken" and input the token number of the token you received!
               </p>
 
               </div>
