@@ -23,6 +23,10 @@ export default function Mint() {
   const [saleStarted, setSaleStarted] = useState(false)
 
   const [bananaPrice, setBananaPrice] = useState(0)
+  
+  // FOR DISPLAYING
+  
+  const [bananaWisdom, setBananaWisdom] = useState(1)
 
   useEffect( async() => { 
 
@@ -102,11 +106,7 @@ export default function Mint() {
     }
     
   };
-
   
-
-
-
   return (
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -181,8 +181,42 @@ export default function Mint() {
                 
             </div> 
             </div>
- 
-          </div>  
+			<div className="flex flex-col items-center">
+
+				<span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 "><button onClick={viewToken(bananaWisdom)}>View Wisdom for token number</button></span>
+				
+                  <input 
+                                      type="number" 
+                                      min="1"
+                                      max="1024"
+                                      value={bananaWisdom}
+                                      onChange={ e => setBananaWisdom(e.target.value) }
+                                      name="" 
+                                      className="Poppitandfinchsans pl-4 text-4xl  inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
+                                  />
+				
+                <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4" id="status">Loading...</span>
+    
+                </div>
+                
+            </div> 
+			
+				
+				<br/>
+				
+  
     </div>  
     )
+	
+	async function viewToken(bananaWisdom) {
+    updateStatus('fetching wisdom...');
+    const wisdom = await bananaContract.methods.viewToken(bananaWisdom).call();
+    updateStatus(`Wisdom: ${wisdom}`);
+	}
+	
+	function updateStatus(status) {
+    const statusEl = document.getElementById('status');
+    statusEl.innerHTML = status;
+    console.log(status);
+	}
   }
