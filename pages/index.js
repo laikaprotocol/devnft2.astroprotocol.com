@@ -50,7 +50,7 @@ export default function Home() {
                     </p>
                     <p className="text-2xl text-white my-6  montserrat">
                     <strong>LAUNCH DATE:</strong> 17 September 2021. 2pm EST. <br />‍
-                    <span className="text-white text-2xl montserrat"><strong>TOTAL SUPPLY: 1024</strong> Tokens.<br/><strong>PRICE: 0.035 MOVR </strong>each.</span></p>
+                    <span className="text-white text-2xl montserrat"><strong>TOTAL SUPPLY: 128</strong> Tokens.<br/><strong>PRICE: 0.035 MOVR </strong>each.</span></p>
                     <iframe src="https://free.timeanddate.com/countdown/i7vcex5b/n107/cf11/cm0/cu4/ct0/cs1/ca2/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs100/szw448/szh189/iso2021-09-17T21:00:00" allowtransparency="true" frameBorder="0" width="425" height="25"></iframe>
 
                   </div>
