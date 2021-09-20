@@ -216,11 +216,11 @@ export default function Mint() {
                                       className="Poppitandfinchsans pl-4 text-4xl  inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
                                   />
                   
-                  <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">SAYINGSSS!</span>
+                  <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">MOVIE STARS!</span>
     
                 </div>
                 {saleStarted ? 
-                <button onClick={() => claimToken(how_many_bananas)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">MINT {how_many_bananas} sayings for {(bananaPrice * how_many_bananas) / (10 ** 18)} MOVR + GAS</button>        
+                <button onClick={() => claimToken(how_many_bananas)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">MINT {how_many_bananas} stars for {(bananaPrice * how_many_bananas) / (10 ** 18)} MOVR + GAS</button>        
                   : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
               }
 				{saleStarted ? 
