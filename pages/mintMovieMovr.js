@@ -239,7 +239,7 @@ export default function Mint() {
                   : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
                 }
 				{saleStarted ?
-				<button onClick={() => reroll(bananaWisdom)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">Reroll Movie Quote for {bananaPrice}</button>        
+				<button onClick={() => reroll(bananaWisdom)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">Reroll Movie Quote for {bananaPrice / (10 ** 18)}</button>        
                   : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
 			    }
 				</span>

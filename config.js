@@ -5,7 +5,7 @@ export const INFURA_ADDRESS = "https://moonriver.api.onfinality.io/public"
 
 export const ADDRESS = "0x5A55AF6482BD21fFf6cDb86dc40117932499d3c0"
 
-export const MOVIEADDRESS = "0xe56C5d8b1D41F242DCC645dBc9a3B273ab69F8E1"
+export const MOVIEADDRESS = "0xc68Ef72FE083a922689E7684A09fbC28C2510ceB"
 
 export const MOVIEABI = [
    {
@@ -141,6 +141,17 @@ export const MOVIEABI = [
          }
       ],
       "stateMutability":"view",
+      "type":"function"
+   },
+   {
+      "inputs":[
+         
+      ],
+      "name":"admin_flipCanView",
+      "outputs":[
+         
+      ],
+      "stateMutability":"nonpayable",
       "type":"function"
    },
    {
