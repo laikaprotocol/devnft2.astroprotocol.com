@@ -30,6 +30,7 @@ export default function Home() {
             <nav className="flex flex-wrap flex-row justify-around Poppitandfinchsans">
               <a href="/#about" className="text-4xl text-white hover:text-black m-6">About</a>
               <a href="/mint" className="text-4xl text-white hover:text-black m-6">Mint!</a>
+			  <a href="/mintMovieMovr" className="text-4xl text-white hover:text-black m-6">Mint a Movie Star!</a>
               <a href="/#traits" className="text-4xl text-white hover:text-black m-6">Wisdom traits</a>
               <a href="/#team" className="text-4xl text-white hover:text-black m-6">Team</a>
               <a href="https://t.me/wisemovrs" className="text-4xl  hover:text-white m-6 text-blau">TELEGRAM</a>
